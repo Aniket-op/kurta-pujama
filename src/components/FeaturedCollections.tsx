@@ -5,19 +5,19 @@ const collections = [
   { 
     title: "WEDDING COLLECTION", 
     slug: "kurta-pajama", 
-    image: "https://images.unsplash.com/photo-1582565431698-35684d0b13bf?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/wedding_collection.png",
     subtitle: "Regal Sherwanis & Kurtas"
   },
   { 
     title: "FESTIVE DROP", 
     slug: "ladies-suits", 
-    image: "https://images.unsplash.com/photo-1583391733959-f199b19e27c1?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/festive_drop.png",
     subtitle: "Vibrant New Arrivals"
   },
   { 
     title: "OFFICE ESSENTIALS", 
     slug: "pant-shirts", 
-    image: "https://images.unsplash.com/photo-1603252109303-2751441dd157?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/office_essentials.png",
     subtitle: "Sharp Tailored Fits"
   },
 ];

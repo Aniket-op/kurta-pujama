@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const categories = [
-  { title: "Kurta Pajama", slug: "kurta-pajama", image: "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=800&auto=format&fit=crop" },
-  { title: "Ladies Suits", slug: "ladies-suits", image: "https://images.unsplash.com/photo-1610118331165-373307b227eb?q=80&w=800&auto=format&fit=crop" },
-  { title: "Turban", slug: "turban", image: "https://images.unsplash.com/photo-1613038634127-d4a9ec0ed154?q=80&w=800&auto=format&fit=crop" },
-  { title: "Pant Shirts", slug: "pant-shirts", image: "https://images.unsplash.com/photo-1594938298596-39e51dd617be?q=80&w=800&auto=format&fit=crop" },
+  { title: "Kurta Pajama", slug: "kurta-pajama", image: "/images/kp1_primary.png" },
+  { title: "Ladies Suits", slug: "ladies-suits", image: "/images/ls1_primary.png" },
+  { title: "Turban", slug: "turban", image: "/images/t1_primary.png" },
+  { title: "Pant Shirts", slug: "pant-shirts", image: "/images/ps1_primary.png" },
 ];
 
 const CategorySection = () => (

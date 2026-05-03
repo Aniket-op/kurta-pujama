@@ -5,28 +5,28 @@ import { Link } from "react-router-dom";
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1594223274512-ad4803739b7c?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/kurta_pajama_hero.png",
     headline: "OWN YOUR TRADITION",
     subtext: "Premium Kurta Pajamas. Crafted for the Modern Man.",
     cta: "Shop Men",
     slug: "kurta-pajama",
   },
   {
-    image: "https://images.unsplash.com/photo-1610118331165-373307b227eb?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/ladies_suits_hero.png",
     headline: "DESI. MODERN. POWERFUL.",
     subtext: "Elegant Salwar Kameez. Express Your Identity.",
     cta: "Shop Women",
     slug: "ladies-suits",
   },
   {
-    image: "https://images.unsplash.com/photo-1613038634127-d4a9ec0ed154?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/turban_hero.png",
     headline: "CROWN OF PRIDE",
     subtext: "Vibrant Turbans in Premium Fabrics.",
     cta: "Shop Turban",
     slug: "turban",
   },
   {
-    image: "https://images.unsplash.com/photo-1594938298596-39e51dd617be?q=80&w=2000&auto=format&fit=crop",
+    image: "/images/pant_shirts_hero.png",
     headline: "SHARP. EVERYDAY.",
     subtext: "Tailored Pant Shirts for Formal & Casual Wear.",
     cta: "Shop Essentials",

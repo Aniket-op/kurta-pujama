@@ -9,6 +9,8 @@ import ProductDetail from "./pages/ProductDetail.tsx";
 import AboutPage from "./pages/AboutPage.tsx";
 import ContactPage from "./pages/ContactPage.tsx";
 import FAQPage from "./pages/FAQPage.tsx";
+import PrivacyPolicy from "./pages/PrivacyPolicy.tsx";
+import TermsCondition from "./pages/TermsCondition.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import { CartProvider } from "./context/CartContext.tsx";
 import { WishlistProvider } from "./context/WishlistContext.tsx";
@@ -30,6 +32,8 @@ const App = () => (
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/faq" element={<FAQPage />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms-condition" element={<TermsCondition />} />
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

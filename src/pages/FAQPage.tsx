@@ -66,22 +66,22 @@ const faqs = [
 
 const FAQPage = () => {
     return (
-        <div className="min-h-screen bg-background flex flex-col">
+        <div className="min-h-screen bg-nike-white flex flex-col">
             <AnnouncementBar />
             <Navbar />
 
             {/* Header */}
-            <section className="bg-warm-black py-16 md:py-24">
-                <div className="mx-auto max-w-7xl px-6 text-center">
+            <section className="bg-nike-black py-16 md:py-24">
+                <div className="mx-auto max-w-[1440px] px-4 md:px-12 text-center">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h1 className="font-display text-4xl md:text-5xl font-light tracking-wide text-primary-foreground">
+                        <h1 className="font-heading text-[32px] md:text-[56px] text-nike-white">
                             Frequently Asked Questions
                         </h1>
-                        <p className="mt-4 font-body text-sm tracking-wider text-primary-foreground/50 max-w-lg mx-auto">
+                        <p className="mt-4 font-medium text-[16px] md:text-[20px] text-nike-snow max-w-lg mx-auto">
                             Find answers to common questions about our products, shipping, returns, and more.
                         </p>
                     </motion.div>
@@ -89,7 +89,7 @@ const FAQPage = () => {
             </section>
 
             {/* FAQ Content */}
-            <section className="mx-auto max-w-3xl px-6 py-20 flex-grow w-full">
+            <section className="mx-auto max-w-[800px] px-4 md:px-12 py-20 flex-grow w-full">
                 {faqs.map((group, idx) => (
                     <motion.div
                         key={group.category}
@@ -97,18 +97,18 @@ const FAQPage = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: idx * 0.1 }}
-                        className="mb-12 last:mb-0"
+                        className="mb-16 last:mb-0"
                     >
-                        <h2 className="font-body text-base font-semibold tracking-[0.15em] uppercase text-foreground mb-6 pb-2 border-b border-border">
+                        <h2 className="font-heading text-[24px] uppercase text-nike-black mb-6 pb-2 border-b border-nike-border-secondary">
                             {group.category}
                         </h2>
                         <Accordion type="single" collapsible className="w-full">
                             {group.questions.map((faq, i) => (
-                                <AccordionItem key={i} value={`item-${idx}-${i}`} className="border-border">
-                                    <AccordionTrigger className="font-body text-sm hover:no-underline hover:text-gold text-left pe-4 py-5 text-foreground">
+                                <AccordionItem key={i} value={`item-${idx}-${i}`} className="border-nike-border-secondary">
+                                    <AccordionTrigger className="font-heading text-[18px] hover:no-underline hover:text-nike-secondary-text text-left pe-4 py-5 text-nike-black">
                                         {faq.q}
                                     </AccordionTrigger>
-                                    <AccordionContent className="font-body text-sm text-muted-foreground leading-relaxed pb-5">
+                                    <AccordionContent className="font-medium text-[16px] text-nike-secondary-text leading-relaxed pb-5">
                                         {faq.a}
                                     </AccordionContent>
                                 </AccordionItem>
@@ -117,12 +117,12 @@ const FAQPage = () => {
                     </motion.div>
                 ))}
 
-                <div className="mt-16 text-center p-8 bg-muted/50 border border-border">
-                    <h3 className="font-display text-2xl font-light text-foreground mb-3">Still have questions?</h3>
-                    <p className="font-body text-sm text-muted-foreground mb-6">
+                <div className="mt-16 text-center p-12 bg-nike-light-gray border border-nike-border-secondary rounded-lg">
+                    <h3 className="font-heading text-[24px] text-nike-black mb-3">Still have questions?</h3>
+                    <p className="font-medium text-[16px] text-nike-secondary-text mb-8">
                         We're here to help. Contact our customer support team.
                     </p>
-                    <Link to="/contact" className="luxury-btn">
+                    <Link to="/contact" className="btn-primary-dark">
                         Contact Us
                     </Link>
                 </div>
