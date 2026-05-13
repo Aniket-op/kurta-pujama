@@ -6,8 +6,10 @@ const Footer = () => (
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
         {/* Column 1: Logo */}
         <div className="flex flex-col gap-4">
-          <Link to="/" className="font-heading text-[24px] uppercase tracking-widest text-nike-white">
-            YOUR LOGO
+          <Link to="/" className="text-nike-white">
+            <svg className="w-16 h-auto" viewBox="0 0 69 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M68.56 4L18.4 25.36Q12.16 28.02 6.32 28.02 2.04 28.02 2.04 24.82 2.04 22.48 7.04 19.06L36.1 0.44Q31.12 1.44 26.64 1.44 15.86 1.44 8.66 8.52 3.12 13.88 1.12 21.02 -1.12 29.1 2.34 32.76 5.82 36.42 14.12 33.16L68.56 10.04z" fill="currentColor"/>
+            </svg>
           </Link>
         </div>
         

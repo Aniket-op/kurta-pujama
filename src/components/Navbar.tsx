@@ -21,17 +21,19 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-all duration-300 ${scrolled
-        ? "bg-nike-white/95 backdrop-blur-md border-b border-nike-border-secondary shadow-sm"
-        : "bg-nike-white border-b border-nike-border-secondary"
-        }`}
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-nike-white/95 backdrop-blur-md border-b border-nike-border-secondary shadow-sm"
+          : "bg-nike-white border-b border-nike-border-secondary"
+      }`}
     >
       <div className="mx-auto flex h-[60px] max-w-[1440px] items-center justify-between px-4 md:px-12">
         {/* Logo */}
-        <Link to="/" className="flex items-center">
-          <span className="font-display text-2xl md:text-3xl font-medium tracking-tight text-nike-black leading-none">
-            ELITE ATTIRE
-          </span>
+        <Link
+          to="/"
+          className="font-heading text-[24px] uppercase tracking-widest text-nike-black"
+        >
+          Your logo
         </Link>
 
         {/* Desktop Nav */}
@@ -51,18 +53,22 @@ const Navbar = () => {
         {/* Icons / Right side */}
         <div className="flex items-center gap-4">
           <div className="hidden md:flex items-center bg-nike-light-gray rounded-[24px] px-4 py-2 hover:bg-nike-hover-gray transition-colors">
-            <Search size={20} className="text-nike-black mr-2" strokeWidth={1.5} />
-            <input 
-              type="text" 
-              placeholder="Search" 
+            <Search
+              size={20}
+              className="text-nike-black mr-2"
+              strokeWidth={1.5}
+            />
+            <input
+              type="text"
+              placeholder="Search"
               className="bg-transparent border-none outline-none text-[16px] font-medium text-nike-black w-32 placeholder:text-nike-secondary-text"
             />
           </div>
-          
+
           <button className="btn-icon hidden md:flex">
             <Phone size={20} className="text-nike-black" strokeWidth={1.5} />
           </button>
-          
+
           <button
             className="lg:hidden text-nike-black btn-icon"
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -88,17 +94,20 @@ const Navbar = () => {
               </li>
             ))}
             <li className="pt-6 border-t border-nike-border-secondary">
-               <div className="flex items-center bg-nike-light-gray rounded-[24px] px-4 py-3 mb-4">
-                  <Search size={20} className="text-nike-black mr-2" />
-                  <input 
-                    type="text" 
-                    placeholder="Search" 
-                    className="bg-transparent border-none outline-none text-[16px] font-medium text-nike-black w-full placeholder:text-nike-secondary-text"
-                  />
-               </div>
+              <div className="flex items-center bg-nike-light-gray rounded-[24px] px-4 py-3 mb-4">
+                <Search size={20} className="text-nike-black mr-2" />
+                <input
+                  type="text"
+                  placeholder="Search"
+                  className="bg-transparent border-none outline-none text-[16px] font-medium text-nike-black w-full placeholder:text-nike-secondary-text"
+                />
+              </div>
             </li>
             <li>
-              <a href="tel:+918307473499" className="flex items-center gap-3 font-medium text-lg text-nike-black">
+              <a
+                href="tel:+918307473499"
+                className="flex items-center gap-3 font-medium text-lg text-nike-black"
+              >
                 <Phone size={20} /> Contact Us
               </a>
             </li>
